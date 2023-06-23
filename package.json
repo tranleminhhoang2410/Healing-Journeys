@@ -1,0 +1,28 @@
+{
+    "name": "healing-journeys",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "rm -rf dist && rm -rf .parcel-cache && parcel ./src/pages/*.html --no-cache --no-source-maps"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tranleminhhoang2410/Healing-Journeys.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tranleminhhoang2410/Healing-Journeys/issues"
+    },
+    "homepage": "https://github.com/tranleminhhoang2410/Healing-Journeys#readme",
+    "devDependencies": {
+        "parcel": "^2.9.2",
+        "posthtml-doctype": "^1.1.1",
+        "posthtml-include": "^1.7.4"
+    },
+    "dependencies": {
+        "@parcel/ts-utils": "^2.9.2"
+    }
+}
