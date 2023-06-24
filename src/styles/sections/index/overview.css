@@ -1,0 +1,67 @@
+.overview {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.overview .overview-image-frame {
+    width: 580px;
+    height: 448px;
+}
+
+.overview .overview-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.overview .overview-main-heading {
+    font-family: PoppinsBold;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.overview .overview-sub-heading {
+    font-family: PoppinsBold;
+    font-size: 27.65px;
+    line-height: 120%;
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+
+.overview .overview-description {
+    font-family: PoppinsLight;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--title-color);
+}
+
+.overview .overview-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.overview .overview-item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.overview .overview-item-number {
+    font-family: PoppinsBold;
+    font-size: 27.65px;
+    line-height: 120%;
+    color: var(--secondary-color);
+}
+
+.overview .overview-item-description {
+    font-family: PoppinsLight;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--title-color);
+}
