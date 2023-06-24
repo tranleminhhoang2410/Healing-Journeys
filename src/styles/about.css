@@ -1,0 +1,6 @@
+@import url('./base/font.css');
+@import url('./base/reset.css');
+@import url('./base/global.css');
+
+@import url('./components/navbar.css');
+@import url('./components/main-footer.css');

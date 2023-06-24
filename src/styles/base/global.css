@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #43b97f;
+    --secondary-color: #295943;
+    --title-color: #3d3e48;
+    --white-color: #fff;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.main-section {
+    padding: 64px 0;
+}
+
+.small-section {
+    padding: 32px 0;
+}

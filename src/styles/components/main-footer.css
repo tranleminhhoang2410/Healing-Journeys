@@ -1,0 +1,107 @@
+.main-footer {
+    background-color: var(--secondary-color);
+}
+
+/* Info */
+.main-footer .info {
+    margin-bottom: 36px;
+    display: flex;
+}
+
+.main-footer .info-column:first-child {
+    flex: 0 0 30%;
+}
+
+.main-footer .info-column {
+    flex: 0 0 20%;
+}
+
+.main-footer .info-column:last-child {
+    flex: 1;
+}
+
+.main-footer .info-column-heading,
+.main-footer .info-column-description,
+.main-footer .info-column-link,
+.main-footer .info-column-contact {
+    color: var(--white-color);
+}
+
+.main-footer .info-column-heading {
+    text-transform: capitalize;
+}
+
+.main-footer .info-column-heading.large {
+    font-family: PoppinsExtraLight;
+    font-size: 33.18px;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+.main-footer .info-column-heading.small {
+    font-family: PoppinsBold;
+    font-size: 19.2px;
+    line-height: 180%;
+    margin-bottom: 16px;
+}
+
+.main-footer .info-column-description,
+.main-footer .info-column-link,
+.main-footer .info-column-contact {
+    font-family: PoppinsExtraLight;
+    font-size: 16px;
+    max-width: 80%;
+}
+
+.main-footer .info-column-item {
+    margin-bottom: 6px;
+}
+
+.main-footer .info-column-link {
+    text-transform: capitalize;
+}
+
+.main-footer .info-column-link:hover {
+    text-decoration: underline;
+}
+
+/* Author */
+.main-footer .author-name {
+    font-family: PoppinsBold;
+    font-size: 19.2px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: var(--white-color);
+    margin-bottom: 6px;
+}
+
+.main-footer .author-social-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-footer .author-social-item {
+    width: 24px;
+    height: 24px;
+}
+
+.main-footer .author-social-item.instagram {
+    background: url('../../assets/images/icons/social_sprites.png') -10 -10;
+}
+
+.main-footer .author-social-item.facebook {
+    background: url('../../assets/images/icons/social_sprites.png') -54 -10;
+}
+
+.main-footer .author-social-item.twitter {
+    background: url('../../assets/images/icons/social_sprites.png') -98 -10;
+}
+
+.main-footer .author-social-item.basketball {
+    background: url('../../assets/images/icons/social_sprites.png') -142 -10;
+}
+
+.main-footer .author-social-item.github {
+    background: url('../../assets/images/icons/social_sprites.png') -186 -10;
+}
