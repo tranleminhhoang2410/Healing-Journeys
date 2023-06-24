@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.navbar .navbar-item {
+    padding: 12px 16px;
+}
+
+.navbar .navbar-item.active,
+.navbar .navbar-item:active {
+    border: 1px solid var(--white-color);
+    border-radius: 12px;
+}
+
+.navbar .navbar-item:hover {
+    opacity: 0.6;
+}
+
+.navbar .navbar-link {
+    font-family: RalewayExtrabold;
+    font-size: 20px;
+    color: var(--white-color);
+}
