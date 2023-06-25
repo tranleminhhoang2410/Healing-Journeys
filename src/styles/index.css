@@ -5,6 +5,7 @@
 @import url('./components/navbar.css');
 @import url('./components/main-footer.css');
 
+@import url('./sections/index/main-header.css');
 @import url('./sections/index/overview.css');
 @import url('./sections/index/destination.css');
 @import url('./sections/index/testimonials.css');

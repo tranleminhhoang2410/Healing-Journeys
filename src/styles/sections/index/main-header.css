@@ -1,0 +1,86 @@
+.main-header {
+    height: 725px;
+    background: url('../../../assets/images/sand.png') top / cover no-repeat;
+}
+
+.main-header .main-header-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main-header .main-header-info {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.main-header .main-header-heading {
+    font-family: MontserratBold;
+    color: var(--white-color);
+    font-size: 47px;
+}
+
+.main-header .main-header-advertisement-heading {
+    margin-bottom: 10px;
+    font-family: PoppinsSemiBold;
+    font-size: 24px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.main-header .main-header-advertisement-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.main-header .main-header-advertisement-item {
+    display: flex;
+    width: 180px;
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--white-color);
+    border-radius: 12px;
+}
+
+.main-header .main-header-advertisement-img {
+    width: 100%;
+}
+
+.main-header .main-header-advertisement-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main-header .main-header-advertisement-people {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-header .main-header-advertisement-name {
+    font-family: PoppinsMedium;
+    font-size: 16px;
+    line-height: 124.5%;
+    letter-spacing: 0.24px;
+    color: #023f76;
+}
+
+.main-header .main-header-advertisement-people-number {
+    font-family: PoppinsLight;
+    font-size: 12px;
+    line-height: 124.5%;
+    color: #023f76;
+    letter-spacing: -0.24px;
+}
