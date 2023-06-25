@@ -2,3 +2,19 @@
     background: url('../../../assets/images/about-banner.png') top / cover no-repeat;
     height: 469px;
 }
+
+.main-header .main-header-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main-header .main-header-heading {
+    font-family: PoppinsBold;
+    font-size: 33.18px;
+    line-height: 120%;
+    color: var(--white-color);
+    text-transform: capitalize;
+}
