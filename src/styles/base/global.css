@@ -10,6 +10,10 @@
     margin: 0 auto;
 }
 
+.content {
+    padding: 64px 0;
+}
+
 .main-section {
     padding: 64px 0;
 }
