@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "rm -rf dist && rm -rf .parcel-cache && parcel ./src/pages/*.html --no-cache --no-source-maps"
+        "start": "rm -rf dist && rm -rf .parcel-cache && parcel ./src/pages/*.html --no-cache --no-source-maps",
+        "build": "rm -rf build && rm -rf .parcel-cache && parcel build ./src/pages/*.html --no-cache --no-source-maps --dist-dir build"
     },
     "repository": {
         "type": "git",
