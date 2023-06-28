@@ -4,7 +4,7 @@
     "description": "",
     "scripts": {
         "start": "rm -rf dist && rm -rf .parcel-cache && parcel ./src/pages/*.html --no-cache --no-source-maps",
-        "build": "rm -rf build && rm -rf .parcel-cache && parcel build ./src/pages/*.html --no-cache --no-source-maps --dist-dir build",
+        "build": "rm -rf build && rm -rf .parcel-cache && parcel build ./src/components/*.html && parcel build ./src/pages/*.html --no-cache --no-source-maps --dist-dir build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
