@@ -61,6 +61,7 @@
     font-size: 23.04px;
     line-height: 120%;
     color: var(--title-color);
+    text-align: center;
 }
 
 .advantages .advantages-description {
@@ -69,4 +70,10 @@
     line-height: 180%;
     text-align: center;
     color: var(--title-color);
+}
+
+@media (max-width: 575.98px) {
+    .advantages .advantages-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -4,7 +4,7 @@
 }
 
 .main-header .main-header-content {
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -17,4 +17,14 @@
     line-height: 120%;
     color: var(--white-color);
     text-transform: capitalize;
+}
+
+.main-header .menu-mobile {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .main-header .menu-mobile {
+        display: block;
+    }
 }
