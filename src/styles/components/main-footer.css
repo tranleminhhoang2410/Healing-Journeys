@@ -2,22 +2,17 @@
     background-color: var(--secondary-color);
 }
 
+.main-footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
 /* Info */
 .main-footer .info {
-    margin-bottom: 36px;
-    display: flex;
-}
-
-.main-footer .info-column:first-child {
-    flex: 0 0 30%;
-}
-
-.main-footer .info-column {
-    flex: 0 0 20%;
-}
-
-.main-footer .info-column:last-child {
-    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
 }
 
 .main-footer .info-column-heading,
@@ -29,6 +24,16 @@
 
 .main-footer .info-column-heading {
     text-transform: capitalize;
+}
+
+.main-footer .main-footer-logo-frame {
+    width: 280px;
+    height: 212px;
+}
+
+.main-footer .main-footer-logo {
+    width: 100%;
+    height: auto;
 }
 
 .main-footer .info-column-heading.large {
@@ -53,8 +58,10 @@
     max-width: 80%;
 }
 
-.main-footer .info-column-item {
-    margin-bottom: 6px;
+.main-footer .info-column-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .main-footer .info-column-link {
@@ -104,4 +111,61 @@
 
 .main-footer .author-social-item.github {
     background: url('../../assets/images/icons/social_sprites.png') -186 -10;
+}
+
+.main-footer .dropdown {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .main-footer .info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-footer .info-column:first-child {
+        order: 4;
+    }
+}
+@media (max-width: 767.98px) {
+    .main-footer .info {
+        gap: 24px;
+    }
+
+    .main-footer .main-footer-logo-frame {
+        width: 240px;
+    }
+
+    .main-footer .info-column-heading.large {
+        font-size: 26px;
+    }
+
+    .main-footer .info-column-contact,
+    .main-footer .info-column-link {
+        font-size: 14px;
+    }
+}
+@media (max-width: 575.98px) {
+    .main-footer .info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-footer .info-column {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-footer .info-column:first-child {
+        order: unset;
+        align-items: center;
+    }
+    .main-footer .info-column-heading.small {
+        margin-bottom: unset;
+    }
+    .main-footer .dropdown {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .main-footer .info-column-list {
+        display: none;
+    }
 }

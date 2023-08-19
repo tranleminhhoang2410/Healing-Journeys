@@ -9,3 +9,5 @@
 @import url('./sections/index/overview.css');
 @import url('./sections/index/destination.css');
 @import url('./sections/index/testimonials.css');
+
+@import url('./responsive/responsive.css');

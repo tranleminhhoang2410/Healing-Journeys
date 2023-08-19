@@ -3,6 +3,7 @@
     --secondary-color: #295943;
     --title-color: #3d3e48;
     --white-color: #fff;
+    --menu-mobile-color: #f5deb3;
 }
 
 .container {
@@ -11,13 +12,36 @@
 }
 
 .content {
-    padding: 64px 0;
+    padding: 64px 16px;
 }
 
 .main-section {
-    padding: 64px 0;
+    padding: 64px 16px;
 }
 
 .small-section {
-    padding: 32px 0;
+    padding: 32px 16px;
+}
+
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 760px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 520px;
+    }
+}
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 398px;
+    }
 }

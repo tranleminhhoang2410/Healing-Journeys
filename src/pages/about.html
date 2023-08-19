@@ -12,23 +12,7 @@
 <body>
     <header class="main-header">
         <div class="main-header-content container small-section">
-            <nav class="navbar">
-                <img src="../assets/images/logo.png" alt="logo" class="logo" />
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a href="/" class="navbar-link">Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="./about.html" class="navbar-link">About us</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link">Blogs</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link">Explore</a>
-                    </li>
-                </ul>
-            </nav>
+            <include src="../components/navbar.html"></include>
             <h1 class="main-header-heading">about us</h1>
         </div>
     </header>
@@ -156,10 +140,7 @@
         </section>
     </main>
     <include src="../components/footer.html"></include>
-    <script>
-        const navbarItems = document.querySelectorAll('.navbar-item');
-        navbarItems[1].classList.add('active');
-    </script>
+    <script src="../scripts/navbar.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 .navbar {
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
@@ -30,4 +31,28 @@
     font-family: RalewayExtrabold;
     font-size: 20px;
     color: var(--white-color);
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-list {
+        /* display: none; */
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: var(--menu-mobile-color);
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    /* .navbar .navbar-list.show */
+
+    .navbar .menu-mobile {
+        display: block;
+    }
+
+    .navbar .navbar-item {
+        width: 100%;
+        text-align: center;
+    }
 }
