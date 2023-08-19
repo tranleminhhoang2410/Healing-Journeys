@@ -35,7 +35,7 @@
 
 @media (max-width: 991.98px) {
     .navbar .navbar-list {
-        /* display: none; */
+        display: none;
         width: 100%;
         flex-direction: column;
         position: absolute;
@@ -44,8 +44,6 @@
         padding: 16px;
         border-radius: 10px;
     }
-
-    /* .navbar .navbar-list.show */
 
     .navbar .menu-mobile {
         display: block;
