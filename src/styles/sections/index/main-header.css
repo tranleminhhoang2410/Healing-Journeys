@@ -86,6 +86,10 @@
     letter-spacing: -0.24px;
 }
 
+.main-header .menu-mobile {
+    display: none;
+}
+
 @media (max-width: 991.98px) {
     .main-header {
         height: 760px;
@@ -101,6 +105,9 @@
 
     .main-header .main-header-advertisement-item {
         width: 140px;
+    }
+    .main-header .menu-mobile {
+        display: block;
     }
 }
 @media (max-width: 575.98px) {
