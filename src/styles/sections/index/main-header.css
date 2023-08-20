@@ -1,10 +1,10 @@
 .main-header {
-    height: 862px;
+    height: 759px;
     background: url('../../../assets/images/sand.png') top / cover no-repeat;
 }
 
 .main-header .main-header-content {
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -92,7 +92,7 @@
 
 @media (max-width: 991.98px) {
     .main-header {
-        height: 760px;
+        height: 648px;
     }
 
     .main-header .main-header-info {
@@ -101,6 +101,7 @@
 
     .main-header .main-header-content {
         gap: 32px;
+        height: unset;
     }
 
     .main-header .main-header-advertisement-item {
@@ -110,12 +111,16 @@
         display: block;
     }
 }
-@media (max-width: 575.98px) {
-    .main-header {
-        height: 980px;
-    }
+@media (max-width: 767.98px) {
     .main-header .main-header-heading {
         font-size: 36px;
+    }
+}
+@media (max-width: 575.98px) {
+    .main-header {
+        background-color: #ecab6c;
+        background-image: unset;
+        height: unset;
     }
     .main-header .main-header-advertisement-list {
         grid-template-columns: repeat(1, 1fr);

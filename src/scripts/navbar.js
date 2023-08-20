@@ -1,4 +1,4 @@
-const navbarLinks = document.querySelectorAll(".navbar-link");
+const navbarLinks = document.querySelectorAll('.navbar-link');
 const menuMobile = document.querySelector('.menu-mobile');
 const navbarList = document.querySelector('.navbar-list');
 
@@ -9,14 +9,18 @@ const activeLink = Array.from(navbarLinks).find(link => link.href.includes(curre
 activeLink.parentElement.classList.add('active')
 
 //toggle menu
-let isMenuOpen = false;
+let isMenuOpen;
 
-menuMobile.addEventListener("click", () => {
-    if (!isMenuOpen) {
-        navbarList.style.display = 'flex'
-        isMenuOpen = true;
-    } else {
-        navbarList.style.display = 'none'
-        isMenuOpen = false;
+const toggleMenu = () => {
+    navbarList.classList.toggle('toggle'); // Toggle the 'toggle' class
+    isMenuOpen = !isMenuOpen; // Invert the menu state
+}
+
+menuMobile.addEventListener("click", toggleMenu);
+
+// Close menu when clicking outside
+document.addEventListener("click", (event) => {
+    if (isMenuOpen && !event.target.closest('.navbar')) {
+        toggleMenu();
     }
-})
+});
