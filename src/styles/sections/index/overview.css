@@ -8,6 +8,7 @@
 .overview .overview-image-frame {
     width: 580px;
     height: auto;
+    flex: 0 0 50%;
 }
 
 .overview .overview-image {
