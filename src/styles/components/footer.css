@@ -88,26 +88,6 @@
     height: 24px;
 }
 
-.footer .social-item.instagram {
-    background: url('../../assets/images/icons/social_sprites.png') -10 -10;
-}
-
-.footer .social-item.facebook {
-    background: url('../../assets/images/icons/social_sprites.png') -54 -10;
-}
-
-.footer .social-item.twitter {
-    background: url('../../assets/images/icons/social_sprites.png') -98 -10;
-}
-
-.footer .social-item.basketball {
-    background: url('../../assets/images/icons/social_sprites.png') -142 -10;
-}
-
-.footer .social-item.github {
-    background: url('../../assets/images/icons/social_sprites.png') -186 -10;
-}
-
 @media (max-width: 991.98px) {
     .footer .info {
         grid-template-columns: repeat(2, 1fr);

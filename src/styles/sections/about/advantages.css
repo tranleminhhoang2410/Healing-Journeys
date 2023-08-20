@@ -37,18 +37,6 @@
     height: 128px;
 }
 
-.advantages .advantages-icon.shield {
-    background: url('../../../assets/images/icons/advantages_sprites.png') -10 -10;
-}
-
-.advantages .advantages-icon.schedule {
-    background: url('../../../assets/images/icons/advantages_sprites.png') -160 -10;
-}
-
-.advantages .advantages-icon.service {
-    background: url('../../../assets/images/icons/advantages_sprites.png') -310 -10;
-}
-
 .advantages .advantages-info {
     display: flex;
     flex-direction: column;
