@@ -107,4 +107,7 @@
     .destination .destination-list {
         grid-template-columns: repeat(1, 1fr);
     }
+    .destination .watermark {
+        display: none;
+    }
 }

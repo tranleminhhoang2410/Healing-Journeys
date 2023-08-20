@@ -76,44 +76,35 @@
     display: none;
 }
 
-/* Author */
-.footer .author-name {
-    font-family: PoppinsBold;
-    font-size: 19.2px;
-    line-height: 180%;
-    text-transform: capitalize;
-    color: var(--white-color);
-    margin-bottom: 6px;
-}
-
-.footer .author-social-list {
+/* Social*/
+.footer .social-list {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.footer .author-social-item {
+.footer .social-item {
     width: 24px;
     height: 24px;
 }
 
-.footer .author-social-item.instagram {
+.footer .social-item.instagram {
     background: url('../../assets/images/icons/social_sprites.png') -10 -10;
 }
 
-.footer .author-social-item.facebook {
+.footer .social-item.facebook {
     background: url('../../assets/images/icons/social_sprites.png') -54 -10;
 }
 
-.footer .author-social-item.twitter {
+.footer .social-item.twitter {
     background: url('../../assets/images/icons/social_sprites.png') -98 -10;
 }
 
-.footer .author-social-item.basketball {
+.footer .social-item.basketball {
     background: url('../../assets/images/icons/social_sprites.png') -142 -10;
 }
 
-.footer .author-social-item.github {
+.footer .social-item.github {
     background: url('../../assets/images/icons/social_sprites.png') -186 -10;
 }
 
@@ -133,10 +124,6 @@
 
     .footer .footer-logo-frame {
         width: 240px;
-    }
-
-    .footer .info-column-list.toggle {
-        display: flex;
     }
 
     .footer .info-column-heading.large {
