@@ -18,13 +18,9 @@
     },
     "homepage": "https://github.com/tranleminhhoang2410/Healing-Journeys#readme",
     "devDependencies": {
+        "@parcel/transformer-sass": "2.9.2",
         "parcel": "^2.9.2",
         "posthtml-doctype": "^1.1.1",
         "posthtml-include": "^1.7.4"
-    },
-    "dependencies": {
-        "@parcel/transformer-sass": "2.9.2",
-        "@parcel/ts-utils": "^2.9.2",
-        "sass": "^1.66.1"
     }
 }

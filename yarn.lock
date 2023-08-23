@@ -647,13 +647,6 @@
     posthtml-render "^3.0.0"
     semver "^5.7.1"
 
-"@parcel/ts-utils@^2.9.2":
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/@parcel/ts-utils/-/ts-utils-2.9.2.tgz#873a341f592743b617333d07198fe888a99dffa3"
-  integrity sha512-Julkwe/iJ/CWrL+/s0L/LUq7FWyB0bRvd7G1qnL1cGjCuspD6qSp6Ko4xLmSYakco8FTlIU8VRbRTBs9UHOIEQ==
-  dependencies:
-    nullthrows "^1.1.1"
-
 "@parcel/types@2.9.2":
   version "2.9.2"
   resolved "https://registry.yarnpkg.com/@parcel/types/-/types-2.9.2.tgz#195ce0075c9d084c5f57cdffba9ba75ea96e4993"
@@ -1500,7 +1493,7 @@ safe-buffer@^5.0.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
-sass@^1.38.0, sass@^1.66.1:
+sass@^1.38.0:
   version "1.66.1"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.66.1.tgz#04b51c4671e4650aa393740e66a4e58b44d055b1"
   integrity sha512-50c+zTsZOJVgFfTgwwEzkjA3/QACgdNsKueWPyAR0mRINIvLAStVQBbPg14iuqEQ74NPDbXzJARJ/O4SI1zftA==
