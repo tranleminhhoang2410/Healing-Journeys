@@ -1,0 +1,14 @@
+//Base
+@import './base/font.scss';
+@import './base/reset.scss';
+@import './base/global.scss';
+
+//Components
+@import './components/navbar.scss';
+@import './components/footer.scss';
+
+//Sections
+@import './sections/index/main-header.scss';
+@import './sections/index/overview.scss';
+@import './sections/index/destination.scss';
+@import './sections/index/testimonials.scss';
