@@ -85,12 +85,24 @@ To get a local copy up and running follow these simple example steps.
     ```
 2. Install NPM packages
     ```sh
+    npm install
+    ```
+    or
+    ```sh
     yarn install
     ```
 3. Run project
-    ```js
+
+    ```sh
+    npm start
+    ```
+
+    or
+
+    ```sh
     yarn start
     ```
+
 4. View project on http://localhost:1234
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -119,7 +131,7 @@ Project Link: https://github.com/tranleminhhoang2410/Healing-Journeys
 [SASS]: https://img.shields.io/badge/SASS-BF4080?style=for-the-badge&logo=sass&logoColor=white
 [Typescript]: https://shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white
 [Typescript-url]: https://www.typescriptlang.org
-[Parcel]: https://shields.io/badge/Parcel-DBAC74?style=for-the-badge
+[Parcel]: https://shields.io/badge/Parcel-yellow?style=for-the-badge
 [Parcel-url]: https://parceljs.org
 [Netlify]: https://img.shields.io/badge/Netlify-blue?style=for-the-badge&logo=netlify&logoColor=white
 [Netlify-url]: https://www.netlify.com
