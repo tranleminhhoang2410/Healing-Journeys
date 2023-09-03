@@ -1,0 +1,237 @@
+@use '../abstracts';
+
+//About
+.about-banner {
+    background: url('../assets/images/about-banner.png') top / cover no-repeat;
+    height: 469px;
+    .about-banner-content {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .about-banner-heading {
+        font-family: PoppinsBold;
+        font-size: 33.18px;
+        line-height: 120%;
+        color: abstracts.$white-color;
+        text-transform: capitalize;
+    }
+    .menu-mobile {
+        display: none;
+    }
+}
+
+//Advantages
+.advantages {
+    .advantages-heading {
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    .advantages-main-heading {
+        font-family: PoppinsBold;
+        font-size: 27.65px;
+        line-height: 120%;
+        color: abstracts.$title-color;
+        text-transform: capitalize;
+    }
+    .advantages-sub-heading {
+        font-family: PoppinsLight;
+        font-size: 16px;
+        line-height: 180%;
+        color: abstracts.$title-color;
+    }
+    .advantages-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .advantages-item {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .advantages-icon {
+        width: 128px;
+        height: 128px;
+    }
+    .advantages-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .advantages-title {
+        font-family: PoppinsLight;
+        font-size: 23.04px;
+        line-height: 120%;
+        color: abstracts.$title-color;
+        text-align: center;
+    }
+    .advantages-description {
+        font-family: PoppinsLight;
+        font-size: 16px;
+        line-height: 180%;
+        text-align: center;
+        color: abstracts.$title-color;
+    }
+}
+
+//Introduction
+.introduction {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    .introduction-info-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .introduction-info-heading {
+        font-family: PoppinsBold;
+        font-size: 27.65px;
+        line-height: 120%;
+        color: abstracts.$title-color;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+    .introduction-info-description {
+        font-family: PoppinsLight;
+        font-size: 16px;
+        line-height: 180%;
+        color: abstracts.$title-color;
+    }
+    .introduction-image-frame {
+        position: relative;
+    }
+    .introduction-watermark {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+//Teams
+.teams {
+    .teams-heading {
+        margin-bottom: 48px;
+        text-align: left;
+    }
+    .teams-main-heading {
+        font-size: 27.65px;
+        font-family: PoppinsBold;
+        line-height: 120%;
+        color: abstracts.$title-color;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    .teams-sub-heading {
+        font-size: 16px;
+        font-family: PoppinsLight;
+        line-height: 180%;
+        color: abstracts.$title-color;
+    }
+    .teams-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+    .teams-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .personal-image {
+        margin-bottom: 20px;
+    }
+    .personal-name {
+        font-family: PoppinsMedium;
+        font-size: 19.2px;
+        line-height: 180%;
+        text-transform: capitalize;
+        color: #000;
+    }
+    .personal-position {
+        font-family: PoppinsLight;
+        font-size: 16px;
+        line-height: 180%;
+        text-transform: capitalize;
+        color: abstracts.$title-color;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    //Teams
+    .teams {
+        .teams-list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    //Header
+    .about-banner {
+        .menu-mobile {
+            display: block;
+        }
+    }
+
+    //Teams
+    .teams {
+        .teams-list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    //Introduction
+    .introduction {
+        flex-direction: column;
+        .introduction-info-heading {
+            text-align: center;
+        }
+        .introduction-image-frame {
+            display: flex;
+            margin: auto;
+        }
+        .introduction-image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    //Teams
+    .teams {
+        .teams-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .teams-heading {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    //Advantages
+    .advantages {
+        .advantages-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    //Teams
+    .teams {
+        .teams-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

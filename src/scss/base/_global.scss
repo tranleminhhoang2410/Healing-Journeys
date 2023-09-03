@@ -1,0 +1,28 @@
+@use '../abstracts/variables';
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+@each $breakpoint, $dimension in variables.$grid-breakpoints {
+    $max-width: map-get(variables.$container-max-widths, $breakpoint);
+
+    @media (max-width: $dimension) {
+        .container {
+            max-width: $max-width;
+        }
+    }
+}
+
+.content {
+    padding: 64px 16px;
+}
+
+.main-section {
+    padding: 64px 16px;
+}
+
+.small-section {
+    padding: 32px 16px;
+}

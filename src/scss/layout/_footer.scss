@@ -1,22 +1,24 @@
+@use '../abstracts';
+
 .footer {
-    background-color: var(--secondary-color);
+    background-color: abstracts.$secondary-color;
     .info {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 32px;
     }
     .info-column-heading {
-        color: var(--white-color);
+        color: abstracts.$white-color;
         text-transform: capitalize;
     }
     .info-column-description {
-        color: var(--white-color);
+        color: abstracts.$white-color;
         font-family: PoppinsExtraLight;
         font-size: 16px;
         max-width: 80%;
     }
     .info-column-link {
-        color: var(--white-color);
+        color: abstracts.$white-color;
         font-family: PoppinsExtraLight;
         font-size: 16px;
         max-width: 80%;
@@ -26,7 +28,7 @@
         }
     }
     .info-column-contact {
-        color: var(--white-color);
+        color: abstracts.$white-color;
         font-family: PoppinsExtraLight;
         font-size: 16px;
         max-width: 80%;

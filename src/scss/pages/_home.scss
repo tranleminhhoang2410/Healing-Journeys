@@ -1,0 +1,392 @@
+@use '../abstracts';
+
+//Banner
+.home-banner {
+    height: 759px;
+    background: url('../assets/images/sand.png') top / cover no-repeat;
+    .home-banner-content {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 64px;
+    }
+    .home-banner-info {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+    }
+    .home-banner-heading {
+        font-family: MontserratBold;
+        color: abstracts.$white-color;
+        font-size: 47px;
+    }
+    .home-banner-advertisement-heading {
+        margin-bottom: 10px;
+        font-family: PoppinsSemiBold;
+        font-size: 24px;
+        color: abstracts.$white-color;
+        text-transform: uppercase;
+    }
+    .home-banner-advertisement-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .home-banner-advertisement-item {
+        display: flex;
+        width: 180px;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: abstracts.$white-color;
+        border-radius: 12px;
+    }
+    .home-banner-advertisement-img {
+        width: 100%;
+    }
+    .home-banner-advertisement-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .home-banner-advertisement-people {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .home-banner-advertisement-name {
+        font-family: PoppinsMedium;
+        font-size: 16px;
+        line-height: 124.5%;
+        letter-spacing: 0.24px;
+        color: #023f76;
+    }
+    .home-banner-advertisement-people-number {
+        font-family: PoppinsLight;
+        font-size: 12px;
+        line-height: 124.5%;
+        color: #023f76;
+        letter-spacing: -0.24px;
+    }
+    .menu-mobile {
+        display: none;
+    }
+}
+
+//Overview
+.overview {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    .overview-image-frame {
+        width: 580px;
+        height: auto;
+        flex: 0 0 50%;
+    }
+    .overview-image {
+        width: 100%;
+    }
+    .overview-info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .overview-main-heading {
+        font-family: PoppinsBold;
+        font-size: 16px;
+        line-height: 180%;
+        color: abstracts.$secondary-color;
+        text-transform: capitalize;
+    }
+    .overview-sub-heading {
+        font-family: PoppinsBold;
+        font-size: 27.65px;
+        line-height: 120%;
+        color: abstracts.$title-color;
+        text-transform: uppercase;
+    }
+    .overview-description {
+        font-family: PoppinsLight;
+        font-size: 16px;
+        line-height: 180%;
+        color: abstracts.$title-color;
+    }
+    .overview-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .overview-item {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .overview-item-number {
+        font-family: PoppinsBold;
+        font-size: 27.65px;
+        line-height: 120%;
+        color: abstracts.$secondary-color;
+    }
+    .overview-item-description {
+        font-family: PoppinsLight;
+        font-size: 16px;
+        line-height: 180%;
+        color: abstracts.$title-color;
+    }
+}
+
+//Destination
+.destination {
+    .destination-heading {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .destination-main-heading {
+        font-family: PoppinsBold;
+        font-size: 16px;
+        line-height: 180%;
+        text-transform: capitalize;
+        color: abstracts.$secondary-color;
+    }
+    .destination-sub-heading {
+        font-family: PoppinsBold;
+        font-size: 27.65px;
+        line-height: 120%;
+        color: abstracts.$title-color;
+        text-transform: capitalize;
+    }
+    .destination-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 12px;
+        row-gap: 24px;
+    }
+    .destination-item {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s linear;
+        }
+    }
+    .destination-img-frame {
+        position: relative;
+    }
+    .destination-img {
+        width: 100%;
+    }
+    .watermark {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    .destination-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .destination-name {
+        font-family: PoppinsBold;
+        font-size: 19.2px;
+        line-height: 180%;
+        color: abstracts.$title-color;
+        text-transform: capitalize;
+    }
+    .destination-details {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .destination-price {
+        font-family: PoppinsBold;
+        font-size: 16px;
+        line-height: 180%;
+        color: abstracts.$secondary-color;
+    }
+    .destination-timeline {
+        display: flex;
+        align-items: center;
+    }
+    .destination-day-number {
+        font-family: PoppinsLight;
+        font-size: 14px;
+        line-height: 180%;
+        color: abstracts.$title-color;
+        margin-left: 10px;
+    }
+}
+
+//Testimonials
+.testimonials {
+    .testimonials-heading {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .testimonials-main-heading {
+        font-family: PoppinsBold;
+        font-size: 16px;
+        line-height: 180%;
+        text-transform: capitalize;
+        color: abstracts.$secondary-color;
+    }
+    .testimonials-sub-heading {
+        font-family: PoppinsBold;
+        font-size: 27.65px;
+        line-height: 120%;
+        color: abstracts.$title-color;
+        &::first-letter {
+            text-transform: capitalize;
+        }
+    }
+    .testimonials-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 12px;
+        row-gap: 24px;
+    }
+    .testimonials-item {
+        padding: 10px;
+    }
+    .testimonials-item.active {
+        background-color: abstracts.$primary-color;
+        .testimonials-name {
+            color: abstracts.$white-color;
+        }
+        .testimonials-description {
+            color: abstracts.$white-color;
+        }
+    }
+    .testimonials-person {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .testimonials-name {
+        font-family: PoppinsBold;
+        font-size: 23.04px;
+        line-height: 120%;
+        color: abstracts.$title-color;
+        text-transform: capitalize;
+        margin-left: 10px;
+    }
+    .testimonials-description {
+        font-family: PoppinsLight;
+        font-size: 16px;
+        line-height: 180%;
+        color: abstracts.$title-color;
+    }
+}
+
+@media (max-width: 991.98px) {
+    //Header
+    .home-banner {
+        height: 648px;
+        .home-banner-info {
+            max-width: unset;
+        }
+        .home-banner-content {
+            gap: 32px;
+            height: unset;
+        }
+        .home-banner-advertisement-item {
+            width: 140px;
+        }
+        .menu-mobile {
+            display: block;
+        }
+    }
+
+    //Overview
+    .overview {
+        flex-direction: column;
+        .overview-info {
+            order: 1;
+        }
+        .overview-image-frame {
+            order: 2;
+            align-self: center;
+        }
+    }
+
+    //Destination
+    .destination {
+        .destination-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    //Header
+    .home-banner {
+        .home-banner-heading {
+            font-size: 36px;
+        }
+    }
+
+    //Overview
+    .overview {
+        .overview-image-frame {
+            width: 100%;
+        }
+    }
+
+    //Testimonials
+    .testimonials {
+        .testimonials-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    //Header
+    .home-banner {
+        background-color: abstracts.$home-banner-color;
+        background-image: unset;
+        height: unset;
+        .home-banner-advertisement-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .home-banner-advertisement-item {
+            flex-direction: row;
+            width: 100%;
+        }
+        .home-banner-advertisement-img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    //Destination
+    .destination {
+        .destination-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .watermark {
+            display: none;
+        }
+    }
+
+    //Testimonials
+    .testimonials {
+        .testimonials-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
