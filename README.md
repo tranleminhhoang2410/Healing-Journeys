@@ -83,6 +83,10 @@ To get a local copy up and running follow these simple example steps.
     ```sh
     git clone https://github.com/tranleminhhoang2410/Healing-Journeys.git
     ```
+    or
+    ```sh
+    git clone git@github.com:tranleminhhoang2410/Healing-Journeys.git
+    ```
 2. Install NPM packages
     ```sh
     npm install
