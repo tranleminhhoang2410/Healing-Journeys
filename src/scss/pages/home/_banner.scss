@@ -1,0 +1,127 @@
+@use '../../abstracts';
+
+.home-banner {
+    height: 759px;
+    background: url('../assets/images/sand.png') top / cover no-repeat;
+    .home-banner-content {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 64px;
+    }
+    .home-banner-info {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+    }
+    .home-banner-heading {
+        font-family: MontserratBold;
+        color: abstracts.$white-color;
+        font-size: 47px;
+    }
+    .home-banner-advertisement-heading {
+        margin-bottom: 10px;
+        font-family: PoppinsSemiBold;
+        font-size: 24px;
+        color: abstracts.$white-color;
+        text-transform: uppercase;
+    }
+    .home-banner-advertisement-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .home-banner-advertisement-item {
+        display: flex;
+        width: 180px;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: abstracts.$white-color;
+        border-radius: 12px;
+    }
+    .home-banner-advertisement-img {
+        width: 100%;
+    }
+    .home-banner-advertisement-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .home-banner-advertisement-people {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .home-banner-advertisement-name {
+        font-family: PoppinsMedium;
+        font-size: 16px;
+        line-height: 124.5%;
+        letter-spacing: 0.24px;
+        color: #023f76;
+    }
+    .home-banner-advertisement-people-number {
+        font-family: PoppinsLight;
+        font-size: 12px;
+        line-height: 124.5%;
+        color: #023f76;
+        letter-spacing: -0.24px;
+    }
+    .menu-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .home-banner {
+        height: 648px;
+        .home-banner-info {
+            max-width: unset;
+        }
+        .home-banner-content {
+            gap: 32px;
+            height: unset;
+        }
+        .home-banner-advertisement-item {
+            width: 140px;
+        }
+        .menu-mobile {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .home-banner {
+        .home-banner-heading {
+            font-size: 36px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-banner {
+        background-color: abstracts.$home-banner-color;
+        background-image: unset;
+        height: unset;
+        .home-banner-advertisement-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .home-banner-advertisement-item {
+            flex-direction: row;
+            width: 100%;
+        }
+        .home-banner-advertisement-img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+}

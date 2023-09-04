@@ -1,0 +1,107 @@
+@use '../../abstracts';
+
+.destination {
+    .destination-heading {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .destination-main-heading {
+        font-family: PoppinsBold;
+        font-size: 16px;
+        line-height: 180%;
+        text-transform: capitalize;
+        color: abstracts.$secondary-color;
+    }
+    .destination-sub-heading {
+        font-family: PoppinsBold;
+        font-size: 27.65px;
+        line-height: 120%;
+        color: abstracts.$title-color;
+        text-transform: capitalize;
+    }
+    .destination-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 12px;
+        row-gap: 24px;
+    }
+    .destination-item {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s linear;
+        }
+    }
+    .destination-img-frame {
+        position: relative;
+    }
+    .destination-img {
+        width: 100%;
+    }
+    .watermark {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    .destination-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .destination-name {
+        font-family: PoppinsBold;
+        font-size: 19.2px;
+        line-height: 180%;
+        color: abstracts.$title-color;
+        text-transform: capitalize;
+    }
+    .destination-details {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .destination-price {
+        font-family: PoppinsBold;
+        font-size: 16px;
+        line-height: 180%;
+        color: abstracts.$secondary-color;
+    }
+    .destination-timeline {
+        display: flex;
+        align-items: center;
+    }
+    .destination-day-number {
+        font-family: PoppinsLight;
+        font-size: 14px;
+        line-height: 180%;
+        color: abstracts.$title-color;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .destination {
+        .destination-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .destination {
+        .destination-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .watermark {
+            display: none;
+        }
+    }
+}
